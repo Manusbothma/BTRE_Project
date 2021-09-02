@@ -1,0 +1,56 @@
+model/db fields
+
+### listing
+
+ID : INT
+realtor : INT (Forein key (realtor))
+title : STR
+address : STR
+city : STR
+state : STR
+ZIPCODE : STR
+description : Text
+Price : INT
+bedroom : int
+bathroom :  int
+garage: INT [0]
+sqft : int
+lot_size :Float
+is_published : bool [true]
+list_date : Date
+Photo_main: STR
+photo_1
+photo_2
+photo_3
+photo_4
+photo_5
+photo_6
+
+
+### realtor
+
+ID : INT
+name : STR
+photo : STR
+description : Text
+email : STR
+phone : STR
+is_mvp : bool [0]
+hire_date: DATE
+
+
+
+
+### contact
+
+ID : INT
+user_id : INT
+listing : int
+listing_id : INT
+name : STR
+email : STR
+message : text
+contact_date: Date
+
+
+
